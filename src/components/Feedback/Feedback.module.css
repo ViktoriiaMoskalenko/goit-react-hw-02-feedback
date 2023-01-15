@@ -1,0 +1,53 @@
+.wrapper {
+  padding: 50px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 0;
+  border-radius: 20px;
+  background-color: dimgrey;
+  color: white;
+  border: 1px solid dimgrey;
+  margin-bottom: 20px;
+}
+
+.btn:last-child {
+  margin-right: 0;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: blanchedalmond;
+  color: dimgrey;
+  border: 1px solid dimgrey;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.title {
+  font-size: 25px;
+  margin: 0;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.notifi {
+  margin: 0;
+  font-size: 20px;
+}
