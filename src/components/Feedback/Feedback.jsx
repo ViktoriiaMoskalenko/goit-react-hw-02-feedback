@@ -7,9 +7,7 @@ import { Notification } from './Notification'
 import styles from './Feedback.module.css'
 
 export class Feedback extends Component {
-    static defaultProps = {
-        total: 0,
-    };
+
 
     state = {
         good: 0,

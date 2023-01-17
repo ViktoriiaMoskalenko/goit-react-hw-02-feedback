@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './Feedback.module.css'
 
 export function Statistics({ good, neutral, bad, total, positivePercentage }) {
@@ -10,4 +11,12 @@ export function Statistics({ good, neutral, bad, total, positivePercentage }) {
             <li className={styles.item}>Positive feedback: { Math.round(positivePercentage(good, total(good, neutral, bad))) }%</li>
         </ul>
     )
+}
+
+Statistics.prototype = {
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    total: PropTypes.func.isRequired,
+    positivePercentage: PropTypes.func.isRequired
 }
